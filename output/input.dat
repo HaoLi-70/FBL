@@ -1,0 +1,52 @@
+
+#Input file for the line polarization (off limb and optical thin).
+
+verbose = YES
+
+single_point = NO
+
+collision = YES
+
+full_calculation = NO
+
+symmetry = YES
+
+reduced = YES
+
+Thomson_scattering = YES
+
+#Path of the Atom file
+
+atom_path = ../model/FEXIII.dat
+
+model_path = model_path.dat
+
+#if single_point
+
+x_pos = -1.06
+
+z_pos = 0
+
+y_pos = 0
+
+#else
+
+x = -1.4, 1.4
+
+z = -1.4, 1.4
+
+dy = 0.05
+
+rmax = 2
+
+nmax = 101
+
+#output information :
+
+upperlevel = 1 , 2
+
+lowerlevel = 0 , 1
+
+magneticdipole = YES, YES
+
+output_path = output.dat
